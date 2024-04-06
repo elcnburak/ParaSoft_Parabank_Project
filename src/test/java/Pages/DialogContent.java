@@ -29,8 +29,7 @@ public class DialogContent extends ParentPage{
 
     @FindBy(xpath="")
     public WebElement zipCode;
-    @FindBy(xpath="")
-    public WebElement zipCode;
+
 
     @FindBy(xpath="")
     public WebElement phone;
