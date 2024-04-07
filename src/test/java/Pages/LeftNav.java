@@ -8,13 +8,11 @@ import org.openqa.selenium.support.PageFactory;
 public class LeftNav extends ParentPage{
     public LeftNav(){
         PageFactory.initElements(GWD.getDriver(),this);}
-
     @FindBy(xpath = "//*[text()='Register']")
     public WebElement registerButton;
 
     @FindBy(xpath = "//*[@id='customer.firstName']")
     public WebElement registerFirstName;
-
 
     @FindBy(xpath = "//*[@id='customer.lastName']")
     public WebElement registerLastName;
@@ -45,6 +43,17 @@ public class LeftNav extends ParentPage{
     @FindBy(xpath = "//*[@class='title']")
     public WebElement welcomeMessage;
 
+    @FindBy(xpath = "//h2[contains(text(),'Customer Login')]")
+    public WebElement customerLogin;
+
+    @FindBy(xpath = "//input[@name='username']")
+    public WebElement customerLoginUsername;
+
+    @FindBy(xpath = "//input[@type='password' and @name='password']")
+    public WebElement customerLoginPassword;
+
+    @FindBy(xpath = "//input[@type='submit' and @value='Log In']")
+    public WebElement customerLoginButton;
 
 
 
@@ -54,5 +63,8 @@ public class LeftNav extends ParentPage{
 
 
 
-    }
+
+
+
+}
 
