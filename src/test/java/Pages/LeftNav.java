@@ -55,6 +55,37 @@ public class LeftNav extends ParentPage{
     @FindBy(xpath = "//input[@type='submit' and @value='Log In']")
     public WebElement customerLoginButton;
 
+    @FindBy(xpath = "//*[text()='Request Loan']")
+    public WebElement requestLoanButton;
+
+    @FindBy(id = "amount")
+    public WebElement loanAmountField;
+
+    @FindBy(id = "downPayment")
+    public WebElement downPaymentField;
+
+    @FindBy(xpath = "//*[@type='submit']")
+    public WebElement applyNowButton;
+
+    @FindBy(id = "loanProviderName")
+    public WebElement confirmLoanProvider;
+
+    @FindBy(id = "loanStatus")
+    public WebElement confirmLoanStatus;
+
+    @FindBy(xpath = "(//*[@ng-if='loanResponse.approved'])[2]/p")
+    public WebElement confirmLoanMessage;
+
+
+
+
+
+
+
+
+
+
+
 
 
 
