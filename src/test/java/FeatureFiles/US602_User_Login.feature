@@ -4,8 +4,8 @@ Feature: Login
     And The user sees the "Customer Login" section on the home page.
 
     And write username and password as DataTable
-      |Elcin   |
-      |Elcin123|
+      |AHMET   |
+      |Ahmet123|
 
     Then User should login successfully
 
