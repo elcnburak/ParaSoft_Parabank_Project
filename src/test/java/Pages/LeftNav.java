@@ -76,6 +76,34 @@ public class LeftNav extends ParentPage{
     @FindBy(xpath = "(//*[@ng-if='loanResponse.approved'])[2]/p")
     public WebElement confirmLoanMessage;
 
+    @FindBy(id = "newAccountId")
+    public WebElement newAccountNumber;
+
+    @FindBy(xpath = "//*[@ng-if='showActivity']/p/b")
+    public WebElement confirmNoTransaction;
+
+    @FindBy(id = "accountType")
+    public WebElement confirmAccountType;
+
+    @FindBy(id = "balance")
+    public WebElement confirmBalance;
+
+    @FindBy(id = "availableBalance")
+    public WebElement confirmAvailableBalance;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
