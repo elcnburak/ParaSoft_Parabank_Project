@@ -5,6 +5,7 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
@@ -35,6 +36,20 @@ public class ParentPage {
         JavascriptExecutor js=(JavascriptExecutor) getDriver();
         js.executeScript("arguments[0].scrollIntoView();", element);
     }
+
+
+    public void mySelect(WebElement element, int index){
+        Select dropDown=new Select(element);
+        dropDown.selectByIndex(index);
+    }
+
+
+
+
+
+
+
+
 
     public void verifyContainsText(WebElement element, String value){
         wait.until(ExpectedConditions.textToBePresentInElement(element,value));
