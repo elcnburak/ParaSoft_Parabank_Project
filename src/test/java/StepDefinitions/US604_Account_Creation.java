@@ -1,6 +1,5 @@
 package StepDefinitions;
 
-
 import Pages.DialogContent;
 import Utilities.GWD;
 import io.cucumber.datatable.DataTable;
@@ -24,15 +23,6 @@ public class US604_Account_Creation extends GWD {
         dc.mySendKeys(dc.username, "Alican");
         dc.mySendKeys(dc.password, "Alis123");
         dc.myClick(dc.LoginButton);
-    }
-
-    @Then("User should login successfully")
-    public void userShouldLoginSuccessfully() {
-        if (dc.welcomeMessage.getText().toLowerCase().contains("welcome")) {
-            System.out.println("Login successful!"); // Giriş başarılıysa ekrana başarılı mesajı yazdır
-        } else {
-            System.out.println("Login unsuccessful!"); // Giriş başarısızsa ekrana başarısız mesajı yazdır
-        }
     }
 
     @And("Click on the Element in LeftNav")
@@ -69,4 +59,3 @@ public class US604_Account_Creation extends GWD {
         dc.verifyContainsText(dc.successMessage, "Account Opened!");
     }
 }
-
