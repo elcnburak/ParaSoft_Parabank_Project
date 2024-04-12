@@ -105,6 +105,39 @@ public class LeftNav extends ParentPage{
     @FindBy(xpath="//input[@type='submit' and @class='button' and @value='Transfer']")
     public WebElement transferButton;
 
+    @FindBy(xpath="//a[@href='/parabank/updateprofile.htm']")
+    public WebElement updateContactInfo ;
+
+    @FindBy(xpath="//input[@type='submit' and @class='button' and @value='Update Profile']")
+    public WebElement updateButton ;
+
+    @FindBy(id ="customer.firstName")
+    public WebElement customerName;
+
+    @FindBy(id ="customer.lastName")
+    public WebElement lastName;
+
+    @FindBy(id ="customer.address.street")
+    public WebElement customerAddress;
+
+    @FindBy(id ="customer.address.city")
+    public WebElement customerCity;
+
+    @FindBy(id ="customer.address.state")
+    public WebElement customerState;
+
+    @FindBy(id ="customer.address.zipCode")
+    public WebElement customerZipCode;
+
+    @FindBy(id ="customer.phoneNumber")
+    public WebElement customerPhoneNumber;
+
+
+
+
+
+
+
 
 
 

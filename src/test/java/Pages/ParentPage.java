@@ -59,4 +59,8 @@ public class ParentPage {
         //sayfaya ESC tuşu gönderildi
     }
 
+    public void myClear(WebElement element) {
+        element.clear();
+
+    }
 }
