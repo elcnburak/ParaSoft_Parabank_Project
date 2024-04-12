@@ -21,8 +21,6 @@ public class US606_InterAccount extends GWD {
     public void theUserSelectsASenderAccountAndReceiverAccount() {
         ln.myClick(ln.transferFunds);
         ln.myClick(ln.transferToAccount);
-
-
     }
 
     @And("the user enters a amount of transfer.")

@@ -1,4 +1,4 @@
-Feature:
+Feature:Money transfer test between my accounts
 
   Background:
     Given User should login on Parabank home page
