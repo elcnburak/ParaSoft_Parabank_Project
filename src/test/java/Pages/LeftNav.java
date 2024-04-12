@@ -92,6 +92,31 @@ public class LeftNav extends ParentPage{
     public WebElement confirmAvailableBalance;
 
 
+    @FindBy(xpath="//a[contains(text(), 'Transfer Funds')]")
+    public WebElement transferFunds;
+
+    @FindBy(xpath="//option[@label=\"22002\" and @value=\"22002\"]")
+    public WebElement transferToAccount;
+
+    @FindBy(id ="amount")
+    public WebElement transferAmount;
+
+
+    @FindBy(xpath="//input[@type='submit' and @class='button' and @value='Transfer']")
+    public WebElement transferButton;
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

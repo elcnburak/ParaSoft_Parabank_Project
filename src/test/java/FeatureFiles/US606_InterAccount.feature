@@ -1,9 +1,7 @@
 Feature:
 
   Background:
-    Given user visits the parabank website.
-    And the user has logged in.
-    And the user has at least two accounts.
+    Given User should login on Parabank home page
 
   Scenario: Money transfer test between my accounts
     And the user selects a sender account and receiver account.
